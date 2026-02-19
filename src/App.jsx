@@ -23,7 +23,7 @@ function EmailInput() {
 
   return (
     <div className="bg-gradient-to-r from black to-blue-900 w-full h-screen flex flex-col items-center justify-center">
-<div className=" bg-black backdrop-blur-md grid grid-cols-1 md:grid-cols-2 w-full h-screen  shadow-2xl ">
+  <div className=" bg-black backdrop-blur-md grid grid-cols-1 md:grid-cols-2 w-full h-screen  shadow-2xl ">
         <div className="relative  h-full w-full">
           <img      
             src="/images/image.jpg"
@@ -56,8 +56,8 @@ function EmailInput() {
             </p>
 
             <div className="space-y-10">
-              <div className="relative">
-                <label htmlFor="email" className="text-white font-semibold mx-5">
+              <div className="relative mx-12">
+                <label htmlFor="email" className="text-white font-semibold mx-3">
                   Email
                 </label>
                 <i className="fa-solid fa-envelope absolute bottom-1 py-2 mx-2 left-7 text-blue-400"></i>
@@ -67,12 +67,12 @@ function EmailInput() {
                   placeholder="Email Address"
                   value={email}
                   onChange={(e) => handleEmail(e.target.value)}
-                  className="w-full pl-12 pr-4 py-2 mx-2 rounded-full text-black focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  className="w-full pl-12 pr-4 py-2 mx-2 rounded-2xl text-black focus:outline-none focus:ring-2 focus:ring-blue-400"
                 />
               </div>
 
-              <div className="relative">
-                <label htmlFor="password" className="text-white font-semibold mx-5">
+              <div className="relative mx-12 ">
+                <label htmlFor="password" className="text-white font-semibold mx-3">
                   Password
                 </label>
                 <i className="fa-solid fa-lock absolute bottom-10 py-2 mx-2 left-7 text-blue-400"></i>
@@ -81,9 +81,9 @@ function EmailInput() {
                   placeholder="Password"
                   value={password}
                   onChange={(e) => handlePassword(e.target.value)}
-                  className="w-full pl-12 pr-4 py-2 mx-2 rounded-full text-black focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  className="w-full pl-12 pr-4 py-2 mx-2 rounded-2xl text-black focus:outline-none focus:ring-2 focus:ring-blue-400"
                 />
-                <div className="relative space-y-10 w-full flex justify-end mx-0 pt-4 text-sm">
+                <div className="relative space-y-10 w-full flex justify-end mx-4 pt-4 text-sm">
                   <span className="text-orange-300 font-sm cursor-pointer"
                     onClick={()=>alert("forgot password clicked")}>
       
@@ -91,23 +91,25 @@ function EmailInput() {
                   </span>
                 </div>
               </div>
-
+               
               <form onSubmit={handleLogin}>
+                <div className="relative mx-12">
                 <button
                   type="submit"
-                  className="w-full bg-orange-300 from-blue-400 to-cyan-300 text-black font-semibold py-2 mx-2 rounded-full flex items-center justify-center gap-2 hover:scale-105 transition"
+                  className="w-full bg-orange-300 from-blue-400 to-cyan-300 text-black font-semibold py-2 mx-0 rounded-2xl flex items-center justify-center gap-2 hover:scale-105 transition"
                 >
                   <CgLogIn className="text-xl" />
                   Login
                 </button>
+                </div>
 
                 <div className="text-sm text-center pt-4">
                   <p className="text-gray-400">──────────  or connect with ──────────</p>
                 </div>
-                <div class= "pt-6">
+                <div class= "pt-6 mx-12">
                 <button
                   type="button"
-                  className="w-full bg-white text-black py-2  mx-2 rounded-full flex items-center justify-center gap-2 hover:scale-105 transition"
+                  className="w-full bg-white text-black py-2  mx-2 rounded-2xl flex items-center justify-center gap-2 hover:scale-105 transition"
                 >
                   <FcGoogle className="text-2xl bg-white rounded-full w-4 font-semibold" />
                   Sign In with Google
