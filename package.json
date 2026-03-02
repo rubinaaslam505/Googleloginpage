@@ -10,14 +10,22 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@heroicons/react": "^2.2.0",
     "@tailwindcss/vite": "^4.2.1",
+=======
+    "@tailwindcss/vite": "^4.1.18",
+>>>>>>> 7873a7555f2aca079ac8dd414085491d136329e5
     "icons": "^1.0.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.0",
     "react-icons": "^5.5.0",
     "react-router-dom": "^7.13.0",
+<<<<<<< HEAD
     "tailwindcss": "^4.2.1"
+=======
+    "tailwindcss": "^4.1.18"
+>>>>>>> 7873a7555f2aca079ac8dd414085491d136329e5
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
